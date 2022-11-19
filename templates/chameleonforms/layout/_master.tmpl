@@ -1,0 +1,48 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root
+for full license information.}}
+{{!include(/^styles/.*/)}}
+{{!include(/^fonts/.*/)}}
+{{!include(/^webfonts/.*/)}}
+
+{{!include(favicon.ico)}}
+{{!include(logo.svg)}}
+{{!include(search-stopwords.json)}}
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+{{>partials/head}}
+
+<body>
+  {{^_disableNavbar}}
+  {{>partials/navbar}}
+  {{/_disableNavbar}}
+  {{#_home}}
+  {{>partials/home}}
+  {{!body}}
+  {{/_home}}
+  {{^_home}}
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap" >
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar" id="sidetoggle">
+            <div id="sidetoc"></div>
+        </div>
+        <div class="d-none d-xl-block col-xl-2 bd-toc" id="affix">
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+            {{^_disableAffix}}
+              {{>partials/affix}}
+            {{/_disableAffix}}
+              {{!body}}
+        </main>
+    </div>
+</div>
+
+  {{/_home}}
+  {{^_disableFooter}}
+  {{>partials/footer}}
+  {{/_disableFooter}}
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+  {{>partials/scripts}}
+</body>
+
+</html>

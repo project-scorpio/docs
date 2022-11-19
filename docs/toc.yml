@@ -1,0 +1,30 @@
+- name: 快速开始
+  href: getting-started/console.md
+  items:
+    - name: 控制台应用
+      href: getting-started/console.md
+    - name: 通用主机应用
+      href: getting-started/generic-host.md
+- name: 基础知识
+  href: fundamentals/index.md
+  items:
+    - name: 引导程序
+      href: fundamentals/bootstrapper.md
+    - name: 模块化
+      href: fundamentals/modularity.md
+    - name: 常规性操作
+      href: fundamentals/conventional.md
+    - name: 依赖注入
+      href: fundamentals/dependency-injection.md
+    - name: 选项
+      href: fundamentals/options.md
+    - name: 授权
+      href: fundamentals/authorization.md
+    - name: 审计
+      href: fundamentals/auditing.md
+- name: 教程
+  href: tutorials/example-page
+  items:
+    - name: Getting Started
+      href: tutorials/example-page
+    

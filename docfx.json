@@ -1,0 +1,97 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**.csproj"
+          ],
+          "src": "../scorpio/"
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "docs/**.md",
+          "docs/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "favicons/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "globalMetadata": {
+      "_appTitle": "Scorpio",
+      "_appFooter": "© Copyright 2012-2020 MRCollective, Rob Moore, Matt Davies and the contributors to ChameleonForms.",
+      "_appLogoPath": "images/logo.svg",
+      "_enableSearch": true,
+      "_appFaviconPath": "favicons/favicon.ico",
+      "_sourceRepo":"https://github.com/project-scorpio/Scorpio",
+      "_disableSideFilter": false,
+      "site":{
+        "repo":"https://github.com/project-scorpio/Scorpio",
+        "currently":"0.1.1",
+        "lastupdate": "2020-05-04"
+      }
+    },
+    "fileMetadata": {
+      "_disableBreadcrumb": {
+        "index.md": true
+      },
+      "_disableToc": {
+        "index.md": true
+      },
+      "_disableAffix": {
+        "index.md": true
+      },
+      "_home": {
+        "index.md": true
+      }    
+    },
+    "template": [
+      "default",
+      "default(zh-cn)",
+      "templates/chameleonforms",
+      "https://static.docs.com/ui/latest"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}

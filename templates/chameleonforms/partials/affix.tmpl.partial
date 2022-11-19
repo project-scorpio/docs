@@ -1,0 +1,17 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root
+for full license information.}}
+{{^_disableContribution}}
+<div class="float-right">
+  {{#docurl}}
+  <a href="{{docurl}}" target="_blank" class="btn btn-sm btn-secondary"><i class="fa fa-edit fa-fw"></i> {{__global.improveThisDoc}}</a>
+  {{/docurl}}
+  {{#sourceurl}}
+  <li>
+    <a href="{{sourceurl}}" target="_blank" class="btn btn-sm btn-secondary"><i class="fa fa-edit fa-fw"></i>{{__global.viewSource}}</a>
+  </li>
+  {{/sourceurl}}
+  <a href="{{ site.repo }}/issues/new" class="btn btn-sm btn-secondary" target="_blank"><i
+      class="fas fa-tasks fa-fw"></i>
+    报告问题</a>
+</div>
+{{/_disableContribution}}

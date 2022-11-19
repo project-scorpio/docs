@@ -1,0 +1,19 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root
+for full license information.}}
+<div>
+<nav class="collapse bd-links" id="navbar">
+  {{^leaf}}
+  {{>partials/li}}
+  {{/leaf}}
+</nav>
+</div>
+<div id="sidetoggle">
+  <div class="bd-search d-flex align-items-center">
+    <input type="text" id="toc_filter_input" class="form-control td-search-input" id="toc_filter_input" placeholder="{{__global.tocFilter}}" onkeypress="if(event.keyCode==13) {return false;}" autocomplete="off" data-docs-version="4.3">
+  </div>
+  <ul class="collapse bd-links nav" id="bd-docs-nav">
+    {{^leaf}}
+    {{>partials/toc-level}}
+    {{/leaf}}
+  </ul>
+</div>
