@@ -12,7 +12,7 @@
           Scorpio是用于.NET Core 3.0 + 的基于模块化的跨平台框架，包括AOP，模块化，插件化，依赖项注入以及一些常见的扩展和模块。
         </p>
         <div class="d-flex flex-column flex-md-row lead mb-3">
-          <a href="{{site.baseurl}}/docs/getting-started/console" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">快速入门</a>
+          <a href="{{site.baseurl}}/docs/getting-started/console.html" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">快速入门</a>
           <a href="{{site.baseurl}}/installation.html" class="btn btn-lg btn-outline-secondary">下载列表</a>
         </div>
         <p class="text-muted mb-0">
